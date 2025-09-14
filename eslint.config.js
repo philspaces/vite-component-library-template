@@ -9,7 +9,7 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
   // Global ignores
   {
-    ignores: ["dist/"],
+    ignores: ["dist/", "node_modules/", "build/", "coverage/", "**/*.css"],
   },
   // Base configs
   eslint.configs.recommended,
